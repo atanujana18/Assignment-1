@@ -1,0 +1,10 @@
+class Solution:
+    def insertAtEnd(self, head, x):
+        if not head:
+            return Node(x)
+        else:
+            cur=head
+            while cur.next:
+                cur=cur.next
+            cur.next=Node(x)
+        return head
